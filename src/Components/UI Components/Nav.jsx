@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import { useSelector, useDispatch } from "react-redux";
 import * as React from "react";
 import Badge from "@mui/material/Badge";
@@ -155,18 +154,19 @@ export default function Nav({ currentPage }) {
         <li className="navigation-menu-item">
           {["right"].map((anchor) => (
             <React.Fragment key={anchor}>
-              <Button onClick={toggleDrawer(anchor, true)}>
+              <IconButton
+                aria-label="cart"
+                onClick={toggleDrawer(anchor, true)}
+              >
                 <div className="badge">
-                  <IconButton aria-label="cart">
-                    <StyledBadge badgeContent={items} color="secondary">
-                      <ShoppingBagOutlinedIcon
-                        className="anticon anticon-shopping"
-                        style={{ fontSize: "2.4rem" }}
-                      />
-                    </StyledBadge>
-                  </IconButton>
+                  <StyledBadge badgeContent={items} color="secondary">
+                    <ShoppingBagOutlinedIcon
+                      className="anticon anticon-shopping"
+                      style={{ fontSize: "2.4rem" }}
+                    />
+                  </StyledBadge>
                 </div>
-              </Button>
+              </IconButton>
               <Drawer
                 anchor={anchor}
                 open={state[anchor]}
