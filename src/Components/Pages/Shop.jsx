@@ -4,7 +4,7 @@ import allDatas from "../../data/data_origin";
 import SmallCard from "../UI Components/SmallCard";
 
 export default function Shop() {
-  const [currentPage, setCurrentPage] = useState("shop");
+  const [currentPage] = useState("shop");
   const [showAll, setShowAll] = useState(false);
   const datas = allDatas();
   const itemsToShow = showAll ? datas : datas.slice(0, 12);

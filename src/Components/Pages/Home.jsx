@@ -7,7 +7,7 @@ import shareFeatured from "../../data/homeData";
 import Footer from "../UI Components/Footer";
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage] = useState("home");
   const homeData = shareFeatured().slice(0, 6);
   return (
     <>
@@ -44,7 +44,10 @@ export default function Home() {
               </Link>
             </div>
             <div className="banner-img">
-              <img src="/images/banner-girl.789f1fa6f451ad26c5039fcbc049ace7.png" />
+              <img
+                src="/images/banner-girl.789f1fa6f451ad26c5039fcbc049ace7.png"
+                alt="a girl"
+              />
             </div>
           </Banner>
           <div className="display">

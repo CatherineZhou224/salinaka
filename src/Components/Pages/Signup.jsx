@@ -3,7 +3,7 @@ import IdentityForm from "../UI Components/IdentityForm";
 import Nav from "../UI Components/Nav";
 
 export default function Signup() {
-  const [currentPage, setCurrentPage] = useState("signup");
+  const [currentPage] = useState("signup");
   return (
     <>
       <Nav currentPage={currentPage}></Nav>

@@ -304,5 +304,5 @@ export default function allDatas() {
   return datas;
 }
 export function getData(productId) {
-  return datas.filter((item) => item.parameter == productId)[0];
+  return datas.filter((item) => item.parameter === productId)[0];
 }
