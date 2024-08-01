@@ -4,6 +4,8 @@ import {
   decreaseQuantByOne,
   increaseQuantByOne,
   removeFromCarts,
+  applyFilters,
+  resetFilters,
 } from "./actionType";
 
 export const addToCart = (parameter, size, color) => ({
@@ -30,12 +32,23 @@ export const clearAllItem = () => ({
   type: clearAllItems,
 });
 
+export const applyFilter = (parameter) => ({
+  type: applyFilters,
+  payload: parameter,
+});
+
+export const resetFilter = () => ({
+  type: resetFilters,
+});
+
 const cartActions = {
   addToCart,
   removeFromCart,
   increaseQuant,
   decreaseQuant,
   clearAllItem,
+  applyFilter,
+  resetFilter,
 };
 
 export default cartActions;

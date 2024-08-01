@@ -5,7 +5,7 @@ import cartActions from "../Pages/Cart/action";
 
 export default function SmallCard({ item }) {
   const { name, brand, img, price, size, color, parameter } = item;
-  const cartItems = useSelector((state) => state.cartItems);
+  const cartItems = useSelector((state) => state.root.cartItems);
   const [clicked, setClicked] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {

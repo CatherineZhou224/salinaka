@@ -1,13 +1,13 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import Nav from "../UI Components/Nav";
-import allDatas from "../../data/data_origin";
 import SmallCard from "../UI Components/SmallCard";
 
 export default function Shop() {
   const [currentPage] = useState("shop");
   const [showAll, setShowAll] = useState(false);
-  const datas = allDatas();
-  const itemsToShow = showAll ? datas : datas.slice(0, 12);
+  const filteredItems = useSelector((state) => state.filter.filterItems);
+  const itemsToShow = showAll ? filteredItems : filteredItems.slice(0, 12);
 
   const handleClick = () => {
     setShowAll(true);

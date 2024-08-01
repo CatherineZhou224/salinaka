@@ -961,3 +961,90 @@ label {
   padding: 5.6rem;
   margin: auto;
 }
+
+/* filter */
+.filter:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.dialog {
+  padding: 60px 40px;
+}
+
+.filterTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filterTop h5 {
+  font-size: 12px;
+  color: rgb(146, 146, 146);
+  margin-bottom: 20px;
+}
+
+.select {
+  height: 30px;
+  width: 180px;
+}
+
+.dialog h5 {
+  font-size: 12px;
+  color: rgb(146, 146, 146);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ruler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.priceRange {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filterBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.filterBottom button {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.apply {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.apply:hover {
+  background-color: rgb(82, 82, 82);
+  color: white;
+}
+
+.reset {
+  background-color: transparent;
+  color: grey;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: rgb(233, 233, 233);
+  color: grey;
+}
