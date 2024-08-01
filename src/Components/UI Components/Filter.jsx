@@ -3,7 +3,7 @@ import Dialog from "@mui/material/Dialog";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import cartActions from "../Pages/Cart/action";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 export default function Filter() {
   const [open, setOpen] = useState(false);
