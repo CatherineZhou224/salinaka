@@ -18,7 +18,7 @@ export default function ProductDetail() {
   const [clicked, setClicked] = useState(false);
 
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cartItems);
+  const cartItems = useSelector((state) => state.root.cartItems);
 
   useEffect(() => {
     // Check if the item is in the cart to set the clicked state
